@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Catharsium.SmooStone.Entities.Decks;
+using Catharsium.SmooStone.Entities.PlayerAgents;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,7 +11,10 @@ namespace Catharsium.SmooStone
     {
         public static void Main(string[] args)
         {
-            Console.Write("Hello World!");
+            var player = new LocalPlayerAgent();
+            var deck = new Deck();
+
+
             Console.ReadLine();
         }
     }

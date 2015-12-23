@@ -1,0 +1,16 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Catharsium.SmooStone.Entities Class Library",
+  "authors": [ "Catharsium" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Catharsium.Logging": ""
+  },
+
+  "frameworks": {
+    "net451": { }
+  }
+}
