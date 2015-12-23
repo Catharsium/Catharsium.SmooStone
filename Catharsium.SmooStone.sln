@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Composition Root", "0. C
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Catharsium.SmooStone.CompositionRoot", "src\Catharsium.SmooStone.CompositionRoot\Catharsium.SmooStone.CompositionRoot.xproj", "{F1AE7559-3BDB-4332-87AB-108869736FD6}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Catharsium.SmooStone.Entities.Tests", "src\Catharsium.SmooStone.Entities.Tests\Catharsium.SmooStone.Entities.Tests.xproj", "{A83F5B46-E9D9-4F39-8D60-527B22DDCFEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{F1AE7559-3BDB-4332-87AB-108869736FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1AE7559-3BDB-4332-87AB-108869736FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1AE7559-3BDB-4332-87AB-108869736FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83F5B46-E9D9-4F39-8D60-527B22DDCFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83F5B46-E9D9-4F39-8D60-527B22DDCFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83F5B46-E9D9-4F39-8D60-527B22DDCFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83F5B46-E9D9-4F39-8D60-527B22DDCFEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +80,6 @@ Global
 		{D342363E-134F-4281-A624-F63C1C291430} = {AE370579-9C95-459C-90DB-82F00C5FF768}
 		{91E2DE88-DDCF-44BB-BC79-B798DE6CC708} = {AE370579-9C95-459C-90DB-82F00C5FF768}
 		{F1AE7559-3BDB-4332-87AB-108869736FD6} = {91E2DE88-DDCF-44BB-BC79-B798DE6CC708}
+		{A83F5B46-E9D9-4F39-8D60-527B22DDCFEF} = {565AEEE6-B1AD-4D77-9045-4455850B2738}
 	EndGlobalSection
 EndGlobal
