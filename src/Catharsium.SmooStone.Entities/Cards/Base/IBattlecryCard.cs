@@ -1,6 +1,6 @@
 ﻿namespace Catharsium.SmooStone.Entities.Cards.Base
 {
-    public interface IBattlecryCard : ICard
+    public interface IBattlecryCard
     {
         void Battlecry();
     }

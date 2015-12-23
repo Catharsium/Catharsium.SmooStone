@@ -7,8 +7,8 @@
 
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>d0e3cf41-f5a5-477e-be67-97ee775c927e</ProjectGuid>
-    <RootNamespace>Catharsium.SmooStone</RootNamespace>
+    <ProjectGuid>3ed327c2-b215-47df-9f2d-b767acafa967</ProjectGuid>
+    <RootNamespace>Catharsium.Modules.Logging</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
   </PropertyGroup>

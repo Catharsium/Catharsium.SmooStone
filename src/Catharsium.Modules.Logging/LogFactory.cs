@@ -1,4 +1,4 @@
-﻿namespace Catharsium.Logging
+﻿namespace Catharsium.Modules.Logging
 {
     public class LogFactory : ILogFactory
     {

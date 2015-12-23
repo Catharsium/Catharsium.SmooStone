@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Catharsium.SmooStone.Entities")]
+[assembly: AssemblyTitle("Catharsium.Modules.Logging")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Catharsium.SmooStone.Entities")]
+[assembly: AssemblyProduct("Catharsium.Modules.Logging")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,4 +20,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2843d170-b66b-4861-8c9c-076e170d1d94")]
+[assembly: Guid("3ed327c2-b215-47df-9f2d-b767acafa967")]

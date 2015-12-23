@@ -2,12 +2,12 @@
 {
     public interface ICard
     {
-        int Cost { get; set; }
+        string Name { get; }
 
-        int Attack { get; set; }
+        int Cost { get; }
 
-        int Health { get; set; }
+        int Attack { get; }
 
-        string ToString();
+        int Health { get; }
     }
 }
