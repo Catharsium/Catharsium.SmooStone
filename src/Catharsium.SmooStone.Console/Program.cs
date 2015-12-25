@@ -2,10 +2,6 @@
 using Catharsium.SmooStone.Entities.Cards.Base;
 using Catharsium.SmooStone.Entities.Cards.Classic;
 using Catharsium.SmooStone.Entities.Decks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Catharsium.SmooStone.Console
 {
