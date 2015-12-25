@@ -4,8 +4,8 @@ namespace Catharsium.SmooStone.Entities.Game
 {
     public interface IGameState
     {
-        IPlayerAgent Player1 { get; }
+        IPlayer Player1 { get; }
 
-        IPlayerAgent Player2 { get; }
+        IPlayer Player2 { get; }
     }
 }

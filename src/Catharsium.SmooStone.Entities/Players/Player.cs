@@ -6,7 +6,7 @@ using Catharsium.SmooStone.Entities.Boards;
 
 namespace Catharsium.SmooStone.Entities.Players
 {
-    public abstract class PlayerAgent : IPlayerAgent
+    public abstract class Player : IPlayer
     {
         public IDeck Deck { get; }
         

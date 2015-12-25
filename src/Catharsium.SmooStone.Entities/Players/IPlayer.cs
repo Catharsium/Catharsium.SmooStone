@@ -5,7 +5,7 @@ using Catharsium.SmooStone.Entities.Hands;
 
 namespace Catharsium.SmooStone.Entities.Players
 {
-    public interface IPlayerAgent
+    public interface IPlayer
     {
         IDeck Deck { get; }
 

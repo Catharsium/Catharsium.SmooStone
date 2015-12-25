@@ -2,16 +2,26 @@
 {
     public abstract class Card : ICard
     {
-        public abstract int Attack { get; }
+        #region ICard
 
-        public abstract int Cost { get; }
-
-        public abstract int Health { get; }
-
-
-        public string Name
+        public virtual string Name
         {
             get { return GetType().Name; }
         }
+
+
+        public virtual string CurrentDescription
+        {
+            get { return BaseDescription; }
+        }
+
+
+        public abstract string BaseDescription { get; }
+        
+        public abstract int BaseCost { get; }
+
+        public abstract int CurrentCost { get; set; }
+        
+        #endregion
     }
 }

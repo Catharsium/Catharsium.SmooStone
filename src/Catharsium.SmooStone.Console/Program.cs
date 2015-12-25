@@ -1,6 +1,6 @@
 ﻿using Catharsium.Modules.Logging;
 using Catharsium.SmooStone.Entities.Cards.Base;
-using Catharsium.SmooStone.Entities.Cards.Classic;
+using Catharsium.SmooStone.Entities.Cards.Classic.Neutral;
 using Catharsium.SmooStone.Entities.Decks;
 
 namespace Catharsium.SmooStone.Console

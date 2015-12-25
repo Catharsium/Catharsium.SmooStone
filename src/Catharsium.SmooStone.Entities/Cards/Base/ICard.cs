@@ -4,10 +4,12 @@
     {
         string Name { get; }
 
-        int Cost { get; }
+        string BaseDescription { get; }
 
-        int Attack { get; }
+        string CurrentDescription { get; }
 
-        int Health { get; }
+        int BaseCost { get; }
+
+        int CurrentCost { get; set; }
     }
 }

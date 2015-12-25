@@ -1,7 +1,6 @@
 ﻿namespace Catharsium.SmooStone.Entities.Cards.Base
 {
-    public interface IDeathrattleCard
+    public abstract class SpellCard : Card
     {
-        void Deathrattle();
     }
 }
