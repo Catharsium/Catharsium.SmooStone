@@ -1,4 +1,4 @@
-﻿using Catharsium.SmooStone.Entities.Affixes;
+﻿using Catharsium.SmooStone.Entities.GameState.Affixes;
 
 namespace Catharsium.SmooStone.Entities.Tests.Mocks
 {

@@ -1,7 +1,7 @@
-﻿using Catharsium.SmooStone.Entities.Cards.Base;
-using Catharsium.SmooStone.Entities.Decks;
-using Catharsium.SmooStone.Entities.Tests.Mocks;
+﻿using Catharsium.SmooStone.Entities.Tests.Mocks;
 using System.Collections.Generic;
+using Catharsium.SmooStone.Entities.GameState.Cards.Base;
+using Catharsium.SmooStone.Entities.GameState.Decks;
 using Xunit;
 
 namespace Catharsium.SmooStone.Entities.Tests.Decks
@@ -10,7 +10,7 @@ namespace Catharsium.SmooStone.Entities.Tests.Decks
     {
         #region Fixture
 
-        IDeck SUT;
+        readonly IDeck SUT;
 
 
         public DeckTests()

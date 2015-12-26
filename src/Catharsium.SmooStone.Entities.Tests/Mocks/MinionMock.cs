@@ -1,7 +1,6 @@
-﻿using System;
-using Catharsium.SmooStone.Entities.Cards.Base.Minions;
+﻿using Catharsium.SmooStone.Entities.GameState.Cards.Base.Minions;
 
-namespace Catharsium.SmooStone.Entities.Tests.Cards
+namespace Catharsium.SmooStone.Entities.Tests.Mocks
 {
     public class MinionMock : Minion
     {

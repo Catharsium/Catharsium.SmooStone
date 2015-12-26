@@ -1,4 +1,4 @@
-﻿using Catharsium.SmooStone.Entities.Hands;
+﻿using Catharsium.SmooStone.Entities.GameState.Hands;
 using Catharsium.SmooStone.Entities.Tests.Mocks;
 using Xunit;
 
@@ -7,8 +7,8 @@ namespace Catharsium.SmooStone.Entities.Tests.Hands
     public class HandTests
     {
         #region Fixture
-        
-        Hand SUT;
+
+        readonly Hand SUT;
 
         static readonly int MaximumCards = 3;
 

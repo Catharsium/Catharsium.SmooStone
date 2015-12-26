@@ -1,7 +1,7 @@
-﻿using Catharsium.SmooStone.Entities.Affixes;
-using Catharsium.SmooStone.Entities.Cards.Base.Minions;
-using Catharsium.SmooStone.Entities.Tests.Mocks;
+﻿using Catharsium.SmooStone.Entities.Tests.Mocks;
 using System.Collections.Generic;
+using Catharsium.SmooStone.Entities.GameState.Affixes;
+using Catharsium.SmooStone.Entities.GameState.Cards.Base.Minions;
 using Xunit;
 
 namespace Catharsium.SmooStone.Entities.Tests.Cards.Base
@@ -10,7 +10,7 @@ namespace Catharsium.SmooStone.Entities.Tests.Cards.Base
     {
         #region Fixture
 
-        IMinion SUT;
+        readonly IMinion SUT;
 
 
         public MinionTests()

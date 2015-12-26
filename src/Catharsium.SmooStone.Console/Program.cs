@@ -1,7 +1,7 @@
 ﻿using Catharsium.Modules.Logging;
-using Catharsium.SmooStone.Entities.Cards.Base;
-using Catharsium.SmooStone.Entities.Cards.Classic.Neutral;
-using Catharsium.SmooStone.Entities.Decks;
+using Catharsium.SmooStone.Entities.GameState.Cards.Base;
+using Catharsium.SmooStone.Entities.GameState.Cards.Classic.Neutral;
+using Catharsium.SmooStone.Entities.GameState.Decks;
 
 namespace Catharsium.SmooStone.Console
 {

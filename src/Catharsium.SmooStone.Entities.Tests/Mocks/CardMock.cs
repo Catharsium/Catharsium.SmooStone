@@ -1,4 +1,4 @@
-﻿using Catharsium.SmooStone.Entities.Cards.Base;
+﻿using Catharsium.SmooStone.Entities.GameState.Cards.Base;
 
 namespace Catharsium.SmooStone.Entities.Tests.Mocks
 {
