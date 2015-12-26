@@ -1,17 +1,22 @@
 ﻿using Catharsium.SmooStone.Entities.Cards.Base;
+using Catharsium.SmooStone.Entities.Tests.Mocks;
 using Xunit;
 
 namespace Catharsium.SmooStone.Entities.Tests.Cards.Base
 {
     public class BasicCardTests
     {
+        #region Fixture
+
         ICard SUT;
 
 
         public BasicCardTests()
         {
-            SUT = new BasicCardMock();
+            SUT = new CardMock();
         }
+
+        #endregion
 
 
         [Fact]

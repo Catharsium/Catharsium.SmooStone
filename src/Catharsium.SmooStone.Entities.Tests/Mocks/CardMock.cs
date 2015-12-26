@@ -1,8 +1,8 @@
 ﻿using Catharsium.SmooStone.Entities.Cards.Base;
 
-namespace Catharsium.SmooStone.Entities.Tests.Cards.Base
+namespace Catharsium.SmooStone.Entities.Tests.Mocks
 {
-    public class BasicCardMock : Card
+    public class CardMock : Card
     {
         #region Card
         

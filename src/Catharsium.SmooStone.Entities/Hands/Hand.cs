@@ -8,7 +8,14 @@ namespace Catharsium.SmooStone.Entities.Hands
         private IList<ICard> _cards;
         public IList<ICard> Cards
         {
-            get { return _cards; }
+            get
+            {
+                if (_cards == null)
+                {
+                    _cards = new List<ICard>();
+                }
+                return _cards;
+            }
             set
             {
                 _cards = value;
