@@ -5,6 +5,10 @@ namespace Catharsium.SmooStone.Entities.Hands
 {
     public class Hand : IHand
     {
+        #region Properties
+
+        public int MaximumCards { get; set; }
+
         private IList<ICard> _cards;
         public IList<ICard> Cards
         {
@@ -22,15 +26,18 @@ namespace Catharsium.SmooStone.Entities.Hands
             }
         }
 
+        #endregion
 
-        public int MaximumCards { get; set; }
-
+        #region Construction
 
         public Hand(int maximumCards)
         {
             MaximumCards = maximumCards;
         }
 
+        #endregion
+
+        #region IDeck
 
         public bool AddCard(ICard card)
         {
@@ -41,5 +48,7 @@ namespace Catharsium.SmooStone.Entities.Hands
             }
             return false;
         }
+
+        #endregion
     }
 }

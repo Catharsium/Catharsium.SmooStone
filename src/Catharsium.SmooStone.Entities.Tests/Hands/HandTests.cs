@@ -1,9 +1,5 @@
 ﻿using Catharsium.SmooStone.Entities.Hands;
 using Catharsium.SmooStone.Entities.Tests.Mocks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Catharsium.SmooStone.Entities.Tests.Hands
@@ -14,7 +10,7 @@ namespace Catharsium.SmooStone.Entities.Tests.Hands
         
         Hand SUT;
 
-        static readonly int MaximumCards = 30;
+        static readonly int MaximumCards = 3;
 
 
         public HandTests()

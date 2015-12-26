@@ -5,10 +5,10 @@ namespace Catharsium.SmooStone.Entities.Hands
 {
     public interface IHand
     {
-        IList<ICard> Cards { get; }
-
         int MaximumCards { get; set; }
-        
+
+        IList<ICard> Cards { get; }
+                
         bool AddCard(ICard card);
     }
 }
