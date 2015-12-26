@@ -20,8 +20,21 @@
         
         public abstract int BaseCost { get; }
 
-        public abstract int CurrentCost { get; set; }
         
+        private int? _currentCost;
+        public virtual int CurrentCost
+        {
+            get
+            {
+                if (!_currentCost.HasValue)
+                {
+                    _currentCost = BaseCost;
+                }
+                return _currentCost.Value;
+            }
+            set { if (value >= 0) _currentCost = value; }
+        }
+
         #endregion
     }
 }
