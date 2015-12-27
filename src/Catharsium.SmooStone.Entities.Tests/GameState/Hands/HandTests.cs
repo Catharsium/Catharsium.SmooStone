@@ -2,7 +2,7 @@
 using Catharsium.SmooStone.Entities.Tests.Mocks;
 using Xunit;
 
-namespace Catharsium.SmooStone.Entities.Tests.Hands
+namespace Catharsium.SmooStone.Entities.Tests.GameState.Hands
 {
     public class HandTests
     {

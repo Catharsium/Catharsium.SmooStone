@@ -8,7 +8,13 @@
 
         public abstract string BaseDescription { get; }
 
-        public virtual string CurrentDescription => BaseDescription;
+
+        private string _currentDescription;
+        public virtual string CurrentDescription
+        {
+            get { return _currentDescription ?? (_currentDescription = BaseDescription); }
+            set { _currentDescription = value; }
+        }
         
         
         public abstract int BaseCost { get; }

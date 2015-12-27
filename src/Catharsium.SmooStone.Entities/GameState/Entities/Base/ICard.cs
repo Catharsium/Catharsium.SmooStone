@@ -8,6 +8,6 @@
 
         int BaseCost { get; }
 
-        int CurrentCost { get; set; }
+        int CurrentCost { get; }
     }
 }

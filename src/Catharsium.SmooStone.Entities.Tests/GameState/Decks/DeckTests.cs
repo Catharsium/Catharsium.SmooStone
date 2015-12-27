@@ -1,16 +1,16 @@
-﻿using Catharsium.SmooStone.Entities.Tests.Mocks;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Catharsium.SmooStone.Entities.GameState.Decks;
 using Catharsium.SmooStone.Entities.GameState.Entities.Base;
+using Catharsium.SmooStone.Entities.Tests.Mocks;
 using Xunit;
 
-namespace Catharsium.SmooStone.Entities.Tests.Decks
+namespace Catharsium.SmooStone.Entities.Tests.GameState.Decks
 {
     public class DeckTests
     {
         #region Fixture
 
-        readonly IDeck SUT;
+        protected readonly IDeck SUT;
 
 
         public DeckTests()

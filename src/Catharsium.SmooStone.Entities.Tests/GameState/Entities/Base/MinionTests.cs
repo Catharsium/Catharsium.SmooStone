@@ -1,10 +1,10 @@
-﻿using Catharsium.SmooStone.Entities.Tests.Mocks;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Catharsium.SmooStone.Entities.GameState.Affixes;
 using Catharsium.SmooStone.Entities.GameState.Entities.Base.Minions;
+using Catharsium.SmooStone.Entities.Tests.Mocks;
 using Xunit;
 
-namespace Catharsium.SmooStone.Entities.Tests.Cards.Base
+namespace Catharsium.SmooStone.Entities.Tests.GameState.Entities.Base
 {
     public class MinionTests
     {
