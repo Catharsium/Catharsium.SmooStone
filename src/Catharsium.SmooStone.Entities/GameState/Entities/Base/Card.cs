@@ -1,26 +1,19 @@
-﻿namespace Catharsium.SmooStone.Entities.GameState.Cards.Base
+﻿namespace Catharsium.SmooStone.Entities.GameState.Entities.Base
 {
     public abstract class Card : ICard
     {
-        #region ICard
+        #region IAgent
 
-        public virtual string Name
-        {
-            get { return GetType().Name; }
-        }
-
-
-        public virtual string CurrentDescription
-        {
-            get { return BaseDescription; }
-        }
-
+        public virtual string Name => GetType().Name;
 
         public abstract string BaseDescription { get; }
+
+        public virtual string CurrentDescription => BaseDescription;
+        
         
         public abstract int BaseCost { get; }
 
-        
+
         private int? _currentCost;
         public virtual int CurrentCost
         {

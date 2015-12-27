@@ -1,4 +1,4 @@
-﻿using Catharsium.SmooStone.Entities.GameState.Players;
+﻿using Catharsium.SmooStone.Entities.GameState.Entities.Base.Players;
 
 namespace Catharsium.SmooStone.Entities.GameState.Game
 {

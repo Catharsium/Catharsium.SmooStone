@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Catharsium.SmooStone.Entities.GameState.Cards.Base;
+using Catharsium.SmooStone.Entities.GameState.Entities.Base;
 
 namespace Catharsium.SmooStone.Entities.GameState.Hands
 {
@@ -9,21 +9,12 @@ namespace Catharsium.SmooStone.Entities.GameState.Hands
 
         public int MaximumCards { get; set; }
 
+
         private IList<ICard> _cards;
         public IList<ICard> Cards
         {
-            get
-            {
-                if (_cards == null)
-                {
-                    _cards = new List<ICard>();
-                }
-                return _cards;
-            }
-            set
-            {
-                _cards = value;
-            }
+            get { return _cards ?? (_cards = new List<ICard>()); }
+            set {_cards = value; }
         }
 
         #endregion
@@ -41,12 +32,10 @@ namespace Catharsium.SmooStone.Entities.GameState.Hands
 
         public bool AddCard(ICard card)
         {
-            if(Cards.Count < MaximumCards)
-            {
-                Cards.Add(card);
-                return true;
-            }
-            return false;
+            if (Cards.Count >= MaximumCards) return false;
+
+            Cards.Add(card);
+            return true;
         }
 
         #endregion

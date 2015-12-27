@@ -3,9 +3,9 @@ using Catharsium.SmooStone.Entities.GameState.Entities.Base.Minions;
 
 namespace Catharsium.SmooStone.Entities.Actions.Enforcers.Request
 {
-    public class DamageRequest : IDamageRequest
+    public class ChangeAttackRequest : IChangeAttackRequest
     {
-        public int Damage { get; set; }
+        public int Attack { get; set; }
 
         public IEnumerable<IMinion> Targets { get; set; }
     }

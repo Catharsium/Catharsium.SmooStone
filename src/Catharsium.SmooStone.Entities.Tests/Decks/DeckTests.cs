@@ -1,7 +1,7 @@
 ﻿using Catharsium.SmooStone.Entities.Tests.Mocks;
 using System.Collections.Generic;
-using Catharsium.SmooStone.Entities.GameState.Cards.Base;
 using Catharsium.SmooStone.Entities.GameState.Decks;
+using Catharsium.SmooStone.Entities.GameState.Entities.Base;
 using Xunit;
 
 namespace Catharsium.SmooStone.Entities.Tests.Decks
@@ -46,14 +46,14 @@ namespace Catharsium.SmooStone.Entities.Tests.Decks
         {
             var deckSize = 3;
             var cards = new List<ICard>();
-            for (int i= 0; i < deckSize; i++)
+            for (var i= 0; i < deckSize; i++)
             {
                 cards.Add(new CardMock());
             }
             SUT.Fill(cards);
 
             ICard actual;
-            for(int i = 0; i < deckSize; i++)
+            for(var i = 0; i < deckSize; i++)
             {
                 actual = SUT.Draw();
                 Assert.NotNull(actual);

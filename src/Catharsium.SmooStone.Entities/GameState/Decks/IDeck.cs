@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Catharsium.SmooStone.Entities.GameState.Cards.Base;
+using Catharsium.SmooStone.Entities.GameState.Entities.Base;
 
 namespace Catharsium.SmooStone.Entities.GameState.Decks
 {

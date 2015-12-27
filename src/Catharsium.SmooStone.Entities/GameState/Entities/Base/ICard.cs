@@ -1,9 +1,7 @@
-﻿namespace Catharsium.SmooStone.Entities.GameState.Cards.Base
+﻿namespace Catharsium.SmooStone.Entities.GameState.Entities.Base
 {
-    public interface ICard
+    public interface ICard : IEntity
     {
-        string Name { get; }
-
         string BaseDescription { get; }
 
         string CurrentDescription { get; }

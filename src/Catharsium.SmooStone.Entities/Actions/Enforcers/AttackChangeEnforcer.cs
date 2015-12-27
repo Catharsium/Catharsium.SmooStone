@@ -3,33 +3,34 @@ using Catharsium.SmooStone.Entities.Actions.Enforcers.Result;
 
 namespace Catharsium.SmooStone.Entities.Actions.Enforcers
 {
-    public class DamageEnforcer : Enforcer
+    public class ChangeAttackEnforcer : Enforcer
     {
         #region Construction
 
-        public DamageEnforcer(IEnforcerResultFactory resultFactory) : base(resultFactory)
+        public ChangeAttackEnforcer(IEnforcerResultFactory resultFactory) : base(resultFactory)
         {
         }
 
         #endregion
 
+
         #region IEnforcer
 
         public override IEnforcerResult Execute(IRequest request)
         {
-            var damageRequest = request as IDamageRequest;
-            if (damageRequest == null)
+            var changeAttackRequest = request as IChangeAttackRequest;
+            if (changeAttackRequest == null)
             {
                 return ResultFactory.Failure("Request is null");
             }
-            if (damageRequest.Targets == null)
+            if (changeAttackRequest.Targets == null)
             {
                 return ResultFactory.Failure("Request.Targets is null");
             }
-            
-            foreach (var target in damageRequest.Targets)
+
+            foreach (var target in changeAttackRequest.Targets)
             {
-                target.CurrentHealth -= damageRequest.Damage;
+                target.CurrentAttack = changeAttackRequest.Attack;
             }
 
             return ResultFactory.Succes(string.Empty);

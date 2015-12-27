@@ -1,24 +1,17 @@
 ﻿using System;
-using Catharsium.SmooStone.Entities.GameState.Cards.Base.Minions;
+using Catharsium.SmooStone.Entities.Actions.Enforcers;
+using Catharsium.SmooStone.Entities.GameState.Entities.Base.Minions;
 
-namespace Catharsium.SmooStone.Entities.GameState.Cards.Classic.Neutral
+namespace Catharsium.SmooStone.Entities.GameState.Entities.Classic.Neutral
 {
     public class AbusiveSergeant : Minion, IBattlecryMinion
     {
         #region MinionCard
 
-        public override string Name
-        {
-            get { return "Abusive Sergeant"; }
-        }
+        public override string Name => "Abusive Sergeant";
 
-
-        public override string BaseDescription
-        {
-            get { return "Battlecry: Give a minion +2 Attack this turn."; }
-        }
-
-
+        public override string BaseDescription => "Battlecry: Give a minion +2 Attack this turn.";
+        
         public override int BaseCost { get; } = 1;
 
         public override int BaseAttack { get; } = 2;
@@ -29,7 +22,7 @@ namespace Catharsium.SmooStone.Entities.GameState.Cards.Classic.Neutral
 
         #region IBattlecryMinion
 
-        public void Battlecry()
+        public IEnforcer Battlecry()
         {
             // TODO
             throw new NotImplementedException();

@@ -1,4 +1,4 @@
-﻿using Catharsium.SmooStone.Entities.GameState.Cards.Base;
+﻿using Catharsium.SmooStone.Entities.GameState.Entities.Base;
 using Catharsium.SmooStone.Entities.Tests.Mocks;
 using Xunit;
 
@@ -6,10 +6,9 @@ namespace Catharsium.SmooStone.Entities.Tests.Cards.Base
 {
     public class BasicCardTests
     {
-
         #region Fixture
 
-        readonly ICard SUT;
+        protected readonly ICard SUT;
 
 
         public BasicCardTests()

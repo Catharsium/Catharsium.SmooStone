@@ -1,25 +1,29 @@
 ﻿using Catharsium.SmooStone.Entities.GameState.Boards;
-using Catharsium.SmooStone.Entities.GameState.Cards.Base;
 using Catharsium.SmooStone.Entities.GameState.Decks;
 using Catharsium.SmooStone.Entities.GameState.Hands;
 
-namespace Catharsium.SmooStone.Entities.GameState.Players
+namespace Catharsium.SmooStone.Entities.GameState.Entities.Base.Players
 {
-    public interface IPlayer
+    public interface IPlayer : IAgent
     {
+        #region Properties
+
         IDeck Deck { get; }
 
         IHand Hand { get; }
 
         IBoard Board { get; }
-
-        int Health { get; }
-
+        
         int Armor { get; }
 
+        #endregion
+
+        #region Methods
 
         void DrawCard();
 
         ICard PlayCard();
+
+        #endregion
     }
 }

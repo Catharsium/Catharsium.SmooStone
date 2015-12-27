@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Catharsium.SmooStone.Entities.GameState.Affixes;
 
-namespace Catharsium.SmooStone.Entities.GameState.Cards.Base.Minions
+namespace Catharsium.SmooStone.Entities.GameState.Entities.Base
 {
-    public interface IMinion
+    public interface IAgent : IEntity
     {
         int BaseAttack { get; }
 

@@ -5,15 +5,12 @@ namespace Catharsium.Modules.Logging.Tests
 {
     public class TextWriterLogTests
     {
-        #region Properties
+        #region Fixture
 
         protected StringWriter MockWriter;
 
         protected static readonly string Data = "My test data";
 
-        #endregion
-
-        #region Setup and Teardown
 
         public TextWriterLogTests()
         {

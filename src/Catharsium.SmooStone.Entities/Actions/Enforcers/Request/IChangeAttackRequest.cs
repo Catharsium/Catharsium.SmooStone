@@ -3,10 +3,10 @@ using Catharsium.SmooStone.Entities.GameState.Entities.Base.Minions;
 
 namespace Catharsium.SmooStone.Entities.Actions.Enforcers.Request
 {
-    public class DamageRequest : IDamageRequest
+    public interface IChangeAttackRequest : IRequest
     {
-        public int Damage { get; set; }
+        int Attack { get; }
 
-        public IEnumerable<IMinion> Targets { get; set; }
+        IEnumerable<IMinion> Targets { get; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Catharsium.SmooStone.Entities.GameState.Affixes;
 
-namespace Catharsium.SmooStone.Entities.GameState.Cards.Base.Minions
+namespace Catharsium.SmooStone.Entities.GameState.Entities.Base.Minions
 {
     public abstract class Minion : Card, IMinion
     {
@@ -44,15 +44,7 @@ namespace Catharsium.SmooStone.Entities.GameState.Cards.Base.Minions
         private IEnumerable<IAffix> _affixes;
         public virtual IEnumerable<IAffix> Affixes
         {
-            get
-            {
-                if(_affixes == null)
-                {
-                    _affixes = new List<IAffix>();
-                }
-                return _affixes;
-            }
-
+            get { return _affixes ?? (_affixes = new List<IAffix>()); }
             set { _affixes = value; }
         }
     }
