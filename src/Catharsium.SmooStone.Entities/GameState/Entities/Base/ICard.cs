@@ -2,6 +2,7 @@
 {
     public interface ICard : IEntity
     {
+
         string BaseDescription { get; }
 
         string CurrentDescription { get; }

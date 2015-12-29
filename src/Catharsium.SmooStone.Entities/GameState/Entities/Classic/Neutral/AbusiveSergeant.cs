@@ -1,5 +1,5 @@
-﻿using System;
-using Catharsium.SmooStone.Entities.Actions.Enforcers;
+﻿using System.Collections.Generic;
+using Catharsium.SmooStone.Entities.Actions.Enforcers.Request;
 using Catharsium.SmooStone.Entities.GameState.Entities.Base.Minions;
 
 namespace Catharsium.SmooStone.Entities.GameState.Entities.Classic.Neutral
@@ -22,10 +22,14 @@ namespace Catharsium.SmooStone.Entities.GameState.Entities.Classic.Neutral
 
         #region IBattlecryMinion
 
-        public IEnforcer Battlecry()
+        public IRequest Battlecry(IEnumerable<IMinion> targets)
         {
-            // TODO
-            throw new NotImplementedException();
+            var result = new RequestFactory<ChangeAttackRequest>().Create();
+            result.Targets = targets;
+            result.Attack = 2;
+            result.Permanent = false;
+                
+            return result;
         }
 
         #endregion
