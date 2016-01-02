@@ -2,9 +2,6 @@
 {
     public class LogFactory : ILogFactory
     {
-        public ILog GetConsoleLog()
-        {
-            return new TextWriterLog(System.Console.Out);
-        }
+        public ILog ConsoleLog { get; } = new TextWriterLog(System.Console.Out);
     }
 }

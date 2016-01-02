@@ -19,7 +19,8 @@ namespace Catharsium.SmooStone.Console
                 var card = new AbusiveSergeant();
                 deck.Fill(new ICard[] {card});
 
-                new LogFactory().GetConsoleLog().Info(deck, null);
+                var logFactory = scope.Resolve<ILogFactory>();
+                logFactory.ConsoleLog.Info(deck, null);
                 System.Console.ReadLine();
             }
         }

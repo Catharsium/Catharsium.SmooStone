@@ -7,7 +7,7 @@ using Catharsium.SmooStone.Entities.GameState.Hands;
 
 namespace Catharsium.SmooStone.Entities.GameState.Entities.Base.Players
 {
-    public abstract class Player : IPlayer
+    public class Player : IPlayer
     {
         #region Properties
 
@@ -21,8 +21,6 @@ namespace Catharsium.SmooStone.Entities.GameState.Entities.Base.Players
 
         public virtual int Armor { get; set; }
 
-        public abstract ICard PlayCard();
-
         public int BaseAttack { get; set; }
 
         public int CurrentAttack { get; set; }
@@ -33,15 +31,36 @@ namespace Catharsium.SmooStone.Entities.GameState.Entities.Base.Players
 
         public IEnumerable<IAffix> Affixes { get; set; }
 
+        protected ILog Log { get; set; }
+
         #endregion
+
+        #region Construction
+
+        public Player(ILog log)
+        {
+            Log = log;
+        }
+
+        #endregion
+
+        #region IPlayer
 
         public void DrawCard()
         {
             var card = Deck.Draw();
             if (!Hand.AddCard(card))
             {
-               new LogFactory().GetConsoleLog().Info($"Could not add {card} because this hand is full", this);
+                Log.Info($"Could not add {card} because this hand is full", this);
             }
         }
+
+
+        public ICard PlayCard()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        #endregion
     }
 }

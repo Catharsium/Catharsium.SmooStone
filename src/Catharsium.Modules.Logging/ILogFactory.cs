@@ -2,6 +2,6 @@
 {
     public interface ILogFactory
     {
-        ILog GetConsoleLog();
+        ILog ConsoleLog { get; }
     }
 }
