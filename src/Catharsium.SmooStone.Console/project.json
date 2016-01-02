@@ -11,6 +11,7 @@
   },
 
   "dependencies": {
+    "Catharsium.SmooStone.CompositionRoot": "1.0.0-*",
     "Catharsium.SmooStone.Entities": "1.0.0-*"
   },
 

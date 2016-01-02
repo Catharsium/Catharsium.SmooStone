@@ -23,13 +23,13 @@ namespace Catharsium.Modules.Logging
 
         #region ILog
 
-        public void Info(object data, object source = null)
+        public void Info(object data, object source)
         {
-            Info(data.ToString(), source.GetType());
+            if (source != null) Info(data.ToString(), source.GetType());
         }
 
 
-        public void Info(string data, object source = null)
+        public void Info(string data, object source)
         {
             Info(data, source.GetType());
         }
