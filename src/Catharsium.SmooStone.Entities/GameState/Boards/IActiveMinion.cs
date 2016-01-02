@@ -3,10 +3,12 @@ using Catharsium.SmooStone.Entities.GameState.Entities.Base.Players;
 
 namespace Catharsium.SmooStone.Entities.GameState.Boards
 {
-    public interface IBoard
+    public interface IActiveMinion
     {
-        void AddMinion(IMinion minion, IPlayer player, int position);
+        IMinion Minion { get; }
 
-        void RemoveMinion(IMinion minion);
+        IPlayer Player { get; }
+
+        int Position { get; }
     }
 }
