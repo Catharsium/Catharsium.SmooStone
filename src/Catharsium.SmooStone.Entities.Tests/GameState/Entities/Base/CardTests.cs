@@ -20,6 +20,24 @@ namespace Catharsium.SmooStone.Entities.Tests.GameState.Entities.Base
 
 
         [Fact]
+        public void ID_SingleCard_ReturnsSameID()
+        {
+            var expected = SUT.ID;
+            var actual = SUT.ID;
+            Assert.Equal(expected, actual);
+        }
+
+
+        [Fact]
+        public void ID_TwoCards_ReturnsDifferentID()
+        {
+            var expected = SUT.ID;
+            var actual = new CardMock().ID;
+            Assert.NotEqual(expected, actual);
+        }
+
+
+        [Fact]
         public void Name_ReturnsTypeName()
         {
             var expected = SUT.GetType().Name;

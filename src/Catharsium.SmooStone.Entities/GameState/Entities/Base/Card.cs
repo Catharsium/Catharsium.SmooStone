@@ -1,8 +1,24 @@
-﻿namespace Catharsium.SmooStone.Entities.GameState.Entities.Base
+﻿using System;
+
+namespace Catharsium.SmooStone.Entities.GameState.Entities.Base
 {
     public abstract class Card : ICard
     {
         #region IAgent
+
+        private Guid? _id;
+        public Guid ID
+        {
+            get
+            {
+                if(!_id.HasValue)
+                {
+                    _id = Guid.NewGuid();
+                }
+                return _id.Value;
+            }
+        }
+
 
         public virtual string Name => GetType().Name;
 
@@ -33,7 +49,7 @@
             }
             set { if (value >= 0) _currentCost = value; }
         }
-
+        
         #endregion
     }
 }

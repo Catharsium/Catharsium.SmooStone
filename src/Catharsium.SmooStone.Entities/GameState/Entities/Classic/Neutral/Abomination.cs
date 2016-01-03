@@ -32,7 +32,7 @@ namespace Catharsium.SmooStone.Entities.GameState.Entities.Classic.Neutral
 
         #endregion
 
-        #region IBattlecryMinion
+        #region IDeathrattleMinion
 
         public IRequest Deathrattle(IEnumerable<IMinion> targets)
         {

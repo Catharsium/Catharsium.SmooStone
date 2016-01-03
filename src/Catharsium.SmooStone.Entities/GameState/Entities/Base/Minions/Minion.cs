@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Catharsium.SmooStone.Entities.GameState.Affixes;
+using System;
 
 namespace Catharsium.SmooStone.Entities.GameState.Entities.Base.Minions
 {
