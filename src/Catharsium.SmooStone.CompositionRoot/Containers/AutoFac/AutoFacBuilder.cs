@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Catharsium.Modules.Logging;
-using Catharsium.SmooStone.CompositionRoot.Containers;
+using Catharsium.SmooStone.CompositionRoot.Builders;
 using Catharsium.SmooStone.Entities.Actions.Enforcers.Result;
 using Catharsium.SmooStone.Entities.GameState.Boards;
 using Catharsium.SmooStone.Entities.GameState.Decks;
@@ -9,9 +9,9 @@ using Catharsium.SmooStone.Entities.GameState.Game;
 using Catharsium.SmooStone.Entities.GameState.Hands;
 using Catharsium.SmooStone.Entities.Orchestrator;
 
-namespace Catharsium.SmooStone.CompositionRoot.Builders
+namespace Catharsium.SmooStone.CompositionRoot.Containers.AutoFac
 {
-    public class AutoFacBuilder : IBuilder
+    public class AutoFacBuilder : ICompositionBuilder
     {
         protected ContainerBuilder ContainerBuilder { get; } = new ContainerBuilder();
 

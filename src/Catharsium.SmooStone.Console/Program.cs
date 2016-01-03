@@ -2,7 +2,7 @@
 using Catharsium.SmooStone.Entities.GameState.Decks;
 using Catharsium.SmooStone.Entities.GameState.Entities.Base;
 using Catharsium.SmooStone.Entities.GameState.Entities.Classic.Neutral;
-using Catharsium.SmooStone.CompositionRoot;
+using Catharsium.SmooStone.CompositionRoot.Builders;
 
 namespace Catharsium.SmooStone.Console
 {
@@ -10,7 +10,7 @@ namespace Catharsium.SmooStone.Console
     {
         public static void Main(string[] args)
         {
-            var container = new BuilderFactory().CreateBuilder().Build();
+            var container = new CompositionBuilderFactory().CreateBuilder().Build();
             using (var scope = container.BeginScope())
             {
                 var deck = container.Resolve<IDeck>();

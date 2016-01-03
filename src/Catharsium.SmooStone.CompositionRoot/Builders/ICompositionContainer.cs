@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Catharsium.SmooStone.CompositionRoot.Containers
+namespace Catharsium.SmooStone.CompositionRoot.Builders
 {
     public interface ICompositionContainer
     {

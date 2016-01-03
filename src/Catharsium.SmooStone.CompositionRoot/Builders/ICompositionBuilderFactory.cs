@@ -2,8 +2,8 @@
 
 namespace Catharsium.SmooStone.CompositionRoot
 {
-    public interface IBuilderFactory
+    public interface ICompositionBuilderFactory
     {
-        IBuilder CreateBuilder();
+        ICompositionBuilder CreateBuilder();
     }
 }

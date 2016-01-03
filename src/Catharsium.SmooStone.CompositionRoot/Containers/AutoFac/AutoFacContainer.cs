@@ -1,7 +1,8 @@
 ﻿using Autofac;
+using Catharsium.SmooStone.CompositionRoot.Builders;
 using System;
 
-namespace Catharsium.SmooStone.CompositionRoot.Containers
+namespace Catharsium.SmooStone.CompositionRoot.Containers.AutoFac
 {
     public class AutoFacContainer : ICompositionContainer
     {
