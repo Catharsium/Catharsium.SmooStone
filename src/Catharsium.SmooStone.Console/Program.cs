@@ -1,9 +1,8 @@
-﻿using Autofac;
-using Catharsium.Modules.Logging;
-using Catharsium.SmooStone.CompositionRoot.Builder;
+﻿using Catharsium.Modules.Logging;
 using Catharsium.SmooStone.Entities.GameState.Decks;
 using Catharsium.SmooStone.Entities.GameState.Entities.Base;
 using Catharsium.SmooStone.Entities.GameState.Entities.Classic.Neutral;
+using Catharsium.SmooStone.CompositionRoot.Builders;
 
 namespace Catharsium.SmooStone.Console
 {
@@ -11,15 +10,15 @@ namespace Catharsium.SmooStone.Console
     {
         public static void Main(string[] args)
         {
-            var container = new AutoFacBuilder().BuildAutoFacContainer();
-            using (var scope = container.BeginLifetimeScope())
+            var container = new CompositionBuilderFactory().CreateBuilder().Build();
+            using (var scope = container.BeginScope())
             {
-                var deck = scope.Resolve<IDeck>();
+                var deck = container.Resolve<IDeck>();
 
                 var card = new AbusiveSergeant();
                 deck.Fill(new ICard[] {card});
 
-                var logFactory = scope.Resolve<ILogFactory>();
+                var logFactory = container.Resolve<ILogFactory>();
                 logFactory.ConsoleLog.Info(deck, null);
                 System.Console.ReadLine();
             }
