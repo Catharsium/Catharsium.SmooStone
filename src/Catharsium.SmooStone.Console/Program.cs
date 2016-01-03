@@ -11,7 +11,7 @@ namespace Catharsium.SmooStone.Console
     {
         public static void Main(string[] args)
         {
-            var container = new AutoFacBuilder().BuildUnityContainer();
+            var container = new AutoFacBuilder().BuildAutoFacContainer();
             using (var scope = container.BeginLifetimeScope())
             {
                 var deck = scope.Resolve<IDeck>();
